@@ -34,7 +34,9 @@
   </head>
   <body>
     <script>
-      window.location = 'https://youtube.com/?app=desktop'
+      if (!location.search) {
+        window.location = 'https://youtube.com/?app=desktop'
+      }
     </script>
   </body>
 </html>
